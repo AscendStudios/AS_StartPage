@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>~/startpage</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-container">
+      <h1 id="Date" style="text-align: center"></h1>
+      <script>
+        var options = { weekday:"long", year:"numeric", month:"short", day:"numeric"}
+        var today = new Date();
+        document.getElementById("Date").innerHTML = today.toLocaleDateString('en-us', options);
+      </script>
+      <div>
+        <video class="vid" poster="src/css/assets/AstroThumb.png" autoplay loop muted defaultmuted>
+          <source src="https://www.dropbox.com/s/rtdzcze17j2rths/combo.mp4?raw=1">
+        </video>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div>
+              <div id="screen">
+                  <div id="Container">
+                      <div id="input">
+                          <p id="input_title"></p>
+                          <input id="input_source" type="command" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+                      </div>
+                      <div id="logger">
+                          <div id="wrapper">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        <!-- <div class="head">
+          <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+            <p>&gt; cd ~/<span class="blinking">_</span>
+              <input autocomplete="on" class="form-control search" name="q" required="required"  type="text">
+            </p>
+          </form> -->
+
+            <div class="bookmarks">
+                <div class="category">
+                    <div class="links">
+                        <li class="title"><a style="color: #f09745; text-decoration:underline" href=https://ascendstudios.com/>Ascend</a></li>
+                        <li><a href="https://gmail.com">G-Mail</a></li>
+                        <li><a href="https://app.pandadoc.com/a/#/dashboard">PandaDoc</a></li>
+                        <li><a href="https://app.clickup.com/">ClickUp</a></li>
+                        <!-- <li><a href="">A|S</a></li> -->
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title"><a style="color: #f09745; text-decoration:underline" href="https://dreamscapeimmersive.com/">DreamScape</a></li>
+                        <li><a href="https://account.meraki.com/login/dashboard_login?password_login=true">Meraki</a></li>
+                        <li><a href="https://dsvr.zendesk.com/agent/dashboard">ZenDesk</a></li>
+                        <li><a href="https://support.dreamscapeimmersive.com/hc/en-us">KnowlegeBase</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1WwXRn9ihwesF7PYtDew_iTdb8oM_mCb24CqTNmLP-7E/edit#gid=1682785892">Inventory</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title"><a style="color: #f09745; text-decoration:underline" href="https://reddit.com">Dev</a></li>
+                        <li><a href="https://developers.qsc.com/s/">Q-Sys Dev</a></li>
+                        <li><a href="https://github.com">GiHub</a></li>
+                        <li><a href="https://stackoverflow.com">StackOverflow</a></li>
+                        <li><a href="https://dev.to/?signin=true">DevIO</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">fun</li>
+                        <li><a href="https://monkeytype.com/">monkeytype</a></li>
+                        <li><a href="https://twitter.com/">twitter</a></li>
+                        <li><a href="https://twitch.tv/">twitch</a></li>
+                        <li><a href="https://netflix.com/">netflix</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/js/terminal.js"></script>
+    <script src="./src/js/commands.js"></script>
+</body>
+
+</html>

@@ -34,8 +34,8 @@ function loc(name) {
   document.getElementById("input_title").innerText = localStorage.getItem('prompt');
 }
 
-function prompt(args) {
-  if (args == "default" || args == undefined) {
+function prompt(name) {
+  if (name == "default" {
     user('root');
     loc('~');
     localStorage.setItem('prompt', localStorage.getItem('username')+":"+localStorage.getItem('location')+"$");
@@ -44,4 +44,14 @@ function prompt(args) {
     localStorage.setItem('prompt', args);
   }
   document.getElementById("input_title").innerText = localStorage.getItem('prompt');
+}
+
+function help() {
+  block_log("There are several funcitons that you can use here!");
+  block_log("'clock' or 'time' will return the current time");
+  block_log("'google' or 'g' will send you to google homepage. Or you can add text and search right from here!")
+  block_log("'user' + your name will change the default username from root to your name")
+  block_log("'locl' + a location will change the default ~ to whatever you typed.")
+  block_log("You can fully customize your prompt by typing 'prompt' + whatever you like")
+  block_log("You can always switch back by typing 'prompt default'")
 }

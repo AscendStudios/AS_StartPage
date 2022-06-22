@@ -23,14 +23,18 @@ function clear(args) {
 }
 
 function user(name) {
-  localStorage.setItem('username', name);
-  localStorage.setItem('prompt', localStorage.getItem('username')+":"+localStorage.getItem('location')+"$");
+  localStorage.setItem('username', name)
+  name = name || 'root';
+  let location = localStorage.getItem('location') || '~';
+  localStorage.setItem('prompt', name + ":" + location+ "$");
   document.getElementById("input_title").innerText = localStorage.getItem('prompt');
 }
 
 function loc(name) {
   localStorage.setItem('location', name);
-  localStorage.setItem('prompt', localStorage.getItem('username')+":"+localStorage.getItem('location')+"$");
+  let uname = localStorage.getItem('username') || 'root';
+  name = name || '~'
+  localStorage.setItem('prompt', uname + ":"+ name + "$");
   document.getElementById("input_title").innerText = localStorage.getItem('prompt');
 }
 

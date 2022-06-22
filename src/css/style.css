@@ -67,16 +67,16 @@ html, body {
 #screen {
     width: 35vw;
     height: 25vh;
-    box-shadow: 1px 1px 50px var(--teal);
+    box-shadow: 1px 1px 50px var(--color-link-hover);
     border-radius: 12px;
     border-style: solid;
-    border-color: var(--teal);
+    border-color: var(--color-link-hover);
     padding: 1.5em 0em;
     overflow:auto;
     display:flex;
     flex-direction:column-reverse;
     background-color: var(--prompt-bg-color);
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 #Container, #Container>div {
@@ -107,10 +107,6 @@ input {
 #input p {
     display: inline-block;
 }
-/* .gif img {
-  max-width: 100%;
-  max-height: 100%;
-} */
 
 .head {
   display: flex;
@@ -151,7 +147,7 @@ li {
 
 a:link {
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--color-link-visited);
 }
 
 a:visited {
@@ -159,7 +155,7 @@ a:visited {
 }
 
 a:hover {
-  color: var(--color-link-hover);
+  color: var(--teal);
 }
 
 .blinking {
@@ -183,8 +179,8 @@ a:hover {
 
 #Date {
 
-  font-family: 'Bebas Neue';
-  font-size: 40px;
+  /* font-family: 'Bebas Neue'; */
+  font-size: 36px;
 }
 
 *:focus {

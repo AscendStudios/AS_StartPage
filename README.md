@@ -34,8 +34,8 @@ There’s a terminal like interface on it that you can type commends into. I’m
   - Currently this is limited to the terminal, but in a future update I will include it as a large item that will work like links
 - `clear`
   - This clears your terminal history.
-- <Up-Arrow>
+- "Up-Arrow"
   - This will recall your last command (makes it easy to issue the same command again or fix a typo)
 - `help`
   - Prints a quick message reminding you of these commands.
-  - Although not fully implemented just yet 
+  - Although not fully implemented just yet

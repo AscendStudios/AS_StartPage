@@ -1,3 +1,10 @@
+var widgets = {
+  links: "Links"
+}
+
+
+
+
 // Search something on google, if no arguments are provided => www.google.com
 g = google;
 function google(args) {
@@ -26,7 +33,7 @@ function user(name) {
   localStorage.setItem('username', name)
   name = name || 'root';
   let location = localStorage.getItem('location') || '~';
-  localStorage.setItem('prompt', name + ":" + location+ "$");
+  localStorage.setItem('prompt', name + ":" + location+ "$ ");
   document.getElementById("input_title").innerText = localStorage.getItem('prompt');
 }
 
@@ -34,15 +41,16 @@ function loc(name) {
   localStorage.setItem('location', name);
   let uname = localStorage.getItem('username') || 'root';
   name = name || '~'
-  localStorage.setItem('prompt', uname + ":"+ name + "$");
+  localStorage.setItem('prompt', uname + ":"+ name + "$ ");
   document.getElementById("input_title").innerText = localStorage.getItem('prompt');
 }
 
+//FIXME: For some reason name is never == 'default'
 function prompt(name) {
   if (name == "default") {
     user('root');
     loc('~');
-    localStorage.setItem('prompt', localStorage.getItem('username')+":"+localStorage.getItem('location')+"$");
+    localStorage.setItem('prompt', localStorage.getItem('username')+":"+localStorage.getItem('location')+"$ ");
   }
   else {
     localStorage.setItem('prompt', args);
@@ -58,4 +66,20 @@ function help() {
   block_log("- loc + location -> update ~ to location");
   block_log("- prompt + string -> update the prompt ");
   block_log("- You can always switch back by typing 'prompt default'");
+}
+
+function links() {
+  document.getElementById(widgets['links']).style.visibility = "visible";
+  for (var widget in widgets) {
+    console.log(widget);
+    if (widget != 'links') {
+      document.getElementById(widgets[widget]).style.visibility = "hidden";
+    }
+  }
+}
+
+function hide() {
+  for (var widget in widgets) {
+      document.getElementById(widgets[widget]).style.visibility = "hidden";
+    }
 }

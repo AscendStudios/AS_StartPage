@@ -1,6 +1,6 @@
 // Terminal config
 if (localStorage.getItem('prompt') == undefined) {
-  localStorage.setItem('prompt', "root:~$");
+  localStorage.setItem('prompt', "root:~$ ");
 }
 
 config = {
@@ -35,7 +35,8 @@ function submit_command() {
     args = input.replace(command, "")
 
     if (typeof window[command] === "function") {
-        block_log(config.shellPrompt + command + " " + args);
+        block_log(config.shellPrompt + " " + command + " " + args);
+        console.log(typeof args);
         window[command](args);
         lastCommand = command + args;
     } else if (command != "") {
@@ -49,3 +50,7 @@ function getLastCommand() {
         document.getElementById("input_source").value = lastCommand;
     }
 }
+
+// default view
+
+document.getElementById("Links").style.visibility = "hidden";

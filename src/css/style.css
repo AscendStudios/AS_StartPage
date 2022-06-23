@@ -68,7 +68,7 @@ html, body {
 #screen {
     width: 35vw;
     height: 25vh;
-    box-shadow: 10px 10px 50px 10 px var(--color-shadow);
+    box-shadow: 10px 10px 50px 10px var(--color-shadow);
     border-radius: 12px;
     border-style: solid;
     border-color: var(--color-border);

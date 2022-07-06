@@ -1,16 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root {
+    --color-bg: #1E1E3E;
+    --color-fg: #D9E0EE;
+    --color-link: #8F9191;
+    --color-link-visited: #F5C2E7;
+    --color-shadow: #000000 ;
+    --color-border: #FFFFFF;
+    --prompt-text: #FFFFFF;
+    --prompt-bg-color: #5A5E8F;
+    --prompt-label: #34fad1;
+}
+
+html, body {
+  background: var(--prompt-bg-color);
+  /* color: var(--color-fg); */
+  font-family: "Ubuntu";
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 #output > div {
-    font-family: 'monospace';
-    background-color: #e5e5e5;
-    border: 1px solid lightgray;
-    border-top: 0;
+    font-family: 'Ubuntu';
+    background-color: var(--prompt-bg-color);
+    /* border: 1px solid lightgray; */
+    /* border-top: 0; */
     font-size: 0.875rem;
     padding: 0.5rem;
+    color: var(--prompt-label);
   }
 
   #output > div:first-child {
-    border-top: 1px solid lightgray;
+    /* border-top: 1px solid lightgray; */
+    color: var(--prompt-label);
   }
 
   #output > div:nth-child(even) {
-    border: 0;
+    /* border: 0; */
   }
+
+  .tip{
+    color: var(--color-fg);
+  }
+
+  .title_String{
+    color: var(--color-fg);
+  }
+  /* .my-repl{
+    background-color: var(--color-link)
+  } */

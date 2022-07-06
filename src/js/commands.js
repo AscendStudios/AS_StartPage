@@ -83,3 +83,7 @@ function hide() {
       document.getElementById(widgets[widget]).style.visibility = "hidden";
     }
 }
+
+function python() {
+  window.open("python_repl.html");
+}

@@ -40,7 +40,7 @@ There’s a terminal like interface on it that you can type commends into. I’m
   - Prints a quick message reminding you of these commands.
   - Although not fully implemented just yet
 
-#Credit:
+# Credit:
 This project would be possible without these two repos from EmDev21 and nwvh
 - https://github.com/nwvh/startpage
 - https://github.com/EmDev21/Dollar
